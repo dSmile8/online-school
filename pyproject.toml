@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "online-school"
+version = "0.1.0"
+description = "online scholl DRF"
+authors = ["Sergey Arefev"]
+license = "No"
+readme = "README.md"
+packages = [{include = "online_school"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "4.2"
+psycopg2-binary = "^2.9.9"
+pillow = "^10.3.0"
+djangorestframework = "^3.15.2"
+black = "^24.4.2"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
