@@ -1,0 +1,65 @@
+[
+{
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+        "password": "123",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Simpson",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-07-01T21:55:48.393Z",
+        "email": "Simpson6515@yandex.ru",
+        "phone": null,
+        "city": null,
+        "image": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+        "password": "123",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Kaza",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-07-01T21:56:27.322Z",
+        "email": "Kaza2015@yandex.ru",
+        "phone": null,
+        "city": null,
+        "image": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+        "password": "123",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Test",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-07-01T21:56:45.111Z",
+        "email": "Test@yandex.ru",
+        "phone": null,
+        "city": null,
+        "image": "",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

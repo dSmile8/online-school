@@ -1,0 +1,41 @@
+[
+  {
+    "model": "users.payment",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "lesson": null,
+      "course": 1,
+      "amount": 100.00,
+      "payment_date": "2022-01-01",
+      "payment_method": "Credit Card",
+      "payment_status": "Completed"
+    }
+  },
+  {
+    "model": "users.payment",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "lesson": null,
+      "course": 2,
+      "amount": 50.00,
+      "payment_date": "2022-01-02",
+      "payment_method": "PayPal",
+      "payment_status": "Not Completed"
+    }
+  },
+  {
+    "model": "users.payment",
+    "pk": 3,
+    "fields": {
+      "user": 2,
+      "lesson": null,
+      "course": 3,
+      "amount": 200.00,
+      "payment_date": "2022-01-03",
+      "payment_method": "Bank Transfer",
+      "payment_status": "Completed"
+    }
+  }
+]
