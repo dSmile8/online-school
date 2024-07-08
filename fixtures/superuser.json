@@ -1,0 +1,23 @@
+[
+  {
+    "model": "users.user",
+    "pk": 4,
+    "fields": {
+      "password": "123",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-07-01T21:55:48.393Z",
+      "email": "Simpson65151@yandex.ru",
+      "phone": null,
+      "city": null,
+      "image": "",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]

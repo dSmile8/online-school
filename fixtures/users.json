@@ -10,7 +10,7 @@
         "first_name": "",
         "last_name": "",
         "is_staff": false,
-        "is_active": true,
+        "is_active": false,
         "date_joined": "2024-07-01T21:55:48.393Z",
         "email": "Simpson6515@yandex.ru",
         "phone": null,
@@ -59,6 +59,92 @@
         "city": null,
         "image": "",
         "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 4,
+    "fields": {
+        "password": "123",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-07-01T21:55:48.393Z",
+        "email": "Simpson65151@yandex.ru",
+        "phone": null,
+        "city": null,
+        "image": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 5,
+    "fields": {
+        "password": "123",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "player",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-07-04T22:20:19.807Z",
+        "email": "Player@yandex.ru",
+        "phone": null,
+        "city": null,
+        "image": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$taoBP6lU9Ja0FziOEPZ0X9$eJUHEvkR2qsKM3clKMKgWoYEWqBTnrfMLr7xofMFM2k=",
+        "last_login": "2024-07-04T23:36:04.087Z",
+        "is_superuser": true,
+        "username": "admin123",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-07-04T23:35:25.188Z",
+        "email": "admin@yandex.ru",
+        "phone": null,
+        "city": null,
+        "image": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$8JzKVQMIzRHCdeOWy2zA3p$ZxTocNJIGVPlP5mgW/9/DVQs27cD653DdqjiJreoTAw=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "babka",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-07-04T23:37:19.300Z",
+        "email": "babka@yandex.ru",
+        "phone": null,
+        "city": null,
+        "image": "",
+        "groups": [
+            1
+        ],
         "user_permissions": []
     }
 }
