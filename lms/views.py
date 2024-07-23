@@ -8,6 +8,7 @@ from rest_framework.generics import (
 )
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
+from lms.tasks import send_email_task
 
 from lms.models import Course, Lesson, Subscription
 from lms.paginators import LmsPagination
@@ -29,9 +30,10 @@ class CourseViewSet(viewsets.ModelViewSet):
             return Course.objects.filter(owner=self.request.user)
 
     def perform_create(self, serializer):
-        lesson = serializer.save()
-        lesson.owner = self.request.user
-        lesson.save()
+        course = serializer.save()
+        course.owner = self.request.user
+        send_email_task.delay(course)
+        course.save()
 
     def get_permission(self):
         if self.action in ['update', 'partial_update', 'list', 'retrieve']:
@@ -52,6 +54,7 @@ class LessonCreateAPIView(CreateAPIView):
     def perform_create(self, serializer):
         lesson = serializer.save()
         lesson.owner = self.request.user
+        send_email_task.delay(lesson.course.pk)
         lesson.save()
 
 
