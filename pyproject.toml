@@ -21,6 +21,11 @@ coverage = "^7.5.4"
 drf-yasg = "^1.21.7"
 django-cors-headers = "^4.4.0"
 stripe = "^10.3.0"
+celery = "^5.4.0"
+redis = "^5.0.7"
+eventlet = "^0.36.1"
+gevent = "^24.2.1"
+django-celery-beat = "^2.6.0"
 
 
 [build-system]
