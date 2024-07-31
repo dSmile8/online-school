@@ -28,7 +28,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -87,11 +87,11 @@ WSGI_APPLICATION = "config.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.getenv('DATABASES_NAME'),
-        "USER": os.getenv('DATABASES_USER'),
-        "PASSWORD": os.getenv('DATABASES_PASSWORD'),
-        "HOST": os.getenv('DATABASES_HOST'),
-        "PORT": os.getenv('DATABASES_PORT'),
+        "NAME": os.getenv('POSTGRES_DB'),
+        "USER": os.getenv('POSTGRES_USER'),
+        "PASSWORD": os.getenv('POSTGRES_PASSWORD'),
+        "HOST": os.getenv('POSTGRES_HOST'),
+        "PORT": os.getenv('POSTGRES_PORT'),
     }
 }
 
@@ -156,8 +156,8 @@ SIMPLE_JWT = {
 
 STRIPE_API_KEY = os.getenv('STRIPE_API_KEY')
 
-CELERY_RESULT_BACKEND = 'redis://127.0.0.1:6379/0'
-CELERY_BROKER_URL = 'redis://127.0.0.1:6379/0'
+CELERY_RESULT_BACKEND = os.getenv('CELERY_RESULT_BACKEND')
+CELERY_BROKER_URL = os.getenv('CELERY_BROKER_URL')
 CELERY_BEAT_SCHEDULE = {
     'create_product': {
         'task': 'users.tasks.check_last_login',
@@ -174,3 +174,4 @@ EMAIL_USE_TLS = os.getenv('EMAIL_USE_TLS')
 EMAIL_USE_SSL = os.getenv('EMAIL_USE_SSL')
 SERVER_EMAIL = EMAIL_HOST_USER
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
